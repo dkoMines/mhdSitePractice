@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div(ng-app="")
+    p Name : 
+      input(type="text" ng-model="name")
+  h1 Hello {{name}}
+  a(class='button', href='newStudent') New Student
+  br
+  a(class='button', href='theList') Student List
+  br
+  // creates a button
+  button.btn.btn-blue Click Me
+  font(color="green")
+    h3 TEXT!
